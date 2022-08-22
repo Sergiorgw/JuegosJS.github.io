@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body id="body-contactanos">
+    <div class="nav-contactanos">
+        <nav>
+            <ul class="indexNav">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="redBall.html">Red Ball</a>
+                </li>
+                <li>
+                    <a href="wordleCopia.html">Wordle</a>
+                </li>
+                <li>
+                    <a href="contactenos.html">Contactános</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="contact-main">
+        <form class="contact-form">
+            <div class="form__head">
+                <legend>Contactanos</legend>
+                <p>Si tienes consultas o dudas, no dudes en contactarnos.</p>
+            </div>
+            <div class="box-inputs">
+                <input type="text" name="Nombre" title="Nombre solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                    required="required">
+                <label class="lbl-nombre">
+                    <span class="text-nomb">Nombre</span>
+                </label>
+            </div>
+            <div class="box-inputs">
+                <input type="email" name="Correo" title="Email incorrecto"
+                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9]+(\.[a-z0-9]+)*(\.[a-z]{2,15})$" required>
+                <label class="lbl-email">
+                    <span class="text-email">Correo</span>
+                </label>
+            </div>
+            <div class="box-inputs">
+                <input type="number" name="Teléfono" title="El numero de contacto es requerido" required>
+                <label class="lbl-telefono">
+                    <span class="text-telefono">Telefono</span>
+                </label>
+            </div>
+            <div class="box-inputs">
+                <textarea name="Mensaje" cols="50" rows="5" placeholder="Escribe tus comentarios"
+                    title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$"
+                    required></textarea>
+            </div>
+            <div class="form__btn">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="contact-form-loader none">
+                <img src="https://raw.githubusercontent.com/SamHerbert/SVG-Loaders/5deed925369e57e9c58ba576ce303466984db501/svg-loaders/spinning-circles.svg"
+                    alt="Cargando">
+            </div>
+            <div class="contact-form-response none">
+                <p>Los datos han sido enviados</p>
+            </div>
+            <input type="hidden" name="_subject" value="Tienes un nuevo contacto!">
+            <input type="hidden" name="_template" value="table">
+        </form>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/formulario.js"></script>
+</body>
+
+</html>

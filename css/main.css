@@ -1,0 +1,459 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+body{
+	background-color: #000000;
+}
+/* index style */
+.titulo-index{
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid rgb(254, 254, 255);
+}
+
+.juegos-cls{
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float: left;
+	width: 600px;
+	color: #fff;
+	font-size: 50px;
+	align-content: center;
+}
+
+.juegos-cls img{
+	width: 100%;
+	height: auto;
+}
+.pie{
+	text-align: center;
+	padding: 10px;
+}
+/* Apunta al rojo style */
+.indexNav li{
+	display: inline;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+nav a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	top: 1.5rem;
+	font-weight: 600;
+}
+#crear, #mostrar, #eliminar{
+	text-decoration: none;
+	font-weight:300;
+	font-size:15px;
+	color:#ffffff;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	background-color:#993;
+}
+
+
+.titulo{
+	color: #fff;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+}
+.contenedor {
+    padding: 0px;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: #ffb;
+    border: 8px dashed #993;
+}
+
+#player {
+	background-color: #900;
+	border: 4px dashed #b22;
+	width: 50px;
+	height: 50px;
+	border-radius: 29px;
+	position: absolute;
+	transition: all 0.3s
+}
+.pointer {
+	background-color: #444444;
+	height: 30px;
+	margin-top: 30px;
+	border-bottom: 0px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+
+/* Copia de Wordle */
+.wordleNav li{
+	display: inline;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+#container-wordle {
+	display: flex;
+	background-color: black;
+	height: 100%;
+	align-items: center;
+	flex-direction: column;
+}
+
+#juego {
+	width: 100%;
+	max-width: 500px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-wordle {
+	border-bottom: 1px solid rgb(58, 58, 60);
+}
+
+.titulo-wordle {
+	color: rgb(255, 255, 255);
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin: 0.4rem 0 0.4rem 0;
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+	"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#tablero-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+#board {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.square {
+	border: 2px solid rgb(58, 58, 60);
+	min-width: 60px;
+	min-height: 60px;
+	font-size: 50px;
+	font-weight: bold;
+	color: gainsboro;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#teclado-container {
+	height: 200px;
+}
+
+.teclado-fila {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 8px;
+	touch-action: manipulation;
+}
+
+.teclado-fila button {
+	font-family: inherit;
+	font-weight: bold;
+	border: 0;
+	padding: 0;
+	height: 58px;
+	cursor: pointer;
+	background-color: #122933;
+	color: rgb(215, 218, 220);
+	flex-grow: 1;
+	text-transform: uppercase;
+	margin-right: 6px;
+	border-radius: 4px;
+	user-select: none;
+}
+
+.teclado-fila button.wide-button {
+	flex-grow: 1.5;
+}
+
+.espacio-medio {
+	flex-grow: 0.5;
+}
+
+/* Contactanos style */
+#body-contactanos {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgb(108, 205, 194), rgb(167, 65, 176));
+}
+
+.nav-contactanos{
+	display: flex;
+	justify-content: left;
+}
+.contact-main{
+	display: flex;
+	justify-content: center;
+}
+
+.form__head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	color: #ffffff;
+}
+
+.contact-form {
+	margin-top: 50px;
+	width: 100%;
+	height: 50px;
+	max-width: 600px;
+}
+
+.box-inputs {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.contact-form-loader {
+	text-align: center;
+}
+
+.contact-form legend,
+.contact-form-response {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.contact-form input {
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+	background: none;
+	border: none;
+	outline: 0px;
+	color: #fff;
+}
+
+.contact-form textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.2em;
+	resize: none;
+	outline: 0px;
+	background: rgba(255, 255, 255, 0.574);
+}
+
+.contact-form textarea:focus {
+	border: 3px solid rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.574);
+}
+
+.contact-form textarea:valid {
+	border: 3px solid rgba(0, 255, 106, 0.504);
+	background: rgba(255, 255, 255, 0.574);
+}
+
+.contact-form label:focus {
+	border: 3px solid rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.574);
+}
+
+.contact-form label:valid {
+	border: 3px solid rgba(0, 255, 106, 0.504);
+	background: rgba(255, 255, 255, 0.574);
+}
+
+.contact-form .lbl-nombre {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid #c7c7c7;
+}
+.contact-form .lbl-nombre::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid #ffffff;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+}
+.text-nomb {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	transition: all 0.3s ease;
+	color: #fff;
+}
+.contact-form input:focus ~ .lbl-nombre .text-nomb,
+.contact-form input:valid ~ .lbl-nombre .text-nomb {
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: #dadada;
+}
+
+.contact-form input:focus ~ .lbl-nombre:after {
+	transform: translateX(0);
+}
+.contact-form input:valid ~ .lbl-nombre:after {
+	transform: translateX(0%);
+}
+
+.contact-form .lbl-email {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.contact-form .lbl-email::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid #ffffff;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+}
+.text-email {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	transition: all 0.3s ease;
+	color: #fff;
+}
+
+.contact-form input:focus ~ .lbl-email .text-email,
+.contact-form input:valid ~ .lbl-email .text-email {
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: #dadada;
+}
+.contact-form input:focus ~ .lbl-email:after,
+.contact-form input:valid ~ .lbl-email:after {
+	transform: translateX(0%);
+}
+
+.contact-form .lbl-telefono {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.contact-form .lbl-telefono::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid #ffffff;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+}
+.text-telefono {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	transition: all 0.3s ease;
+	color: #fff;
+}
+
+.contact-form input:focus ~ .lbl-telefono .text-telefono,
+.contact-form input:valid ~ .lbl-telefono .text-telefono {
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: #dadada;
+}
+.contact-form input:focus ~ .lbl-telefono:after,
+.contact-form input:valid ~ .lbl-telefono:after {
+	transform: translateX(0%);
+}
+
+.contact-form input[type="submit"] {
+	background: rgb(132, 50, 255);
+	color: rgb(179, 179, 179);
+	border: 1px solid rgb(165, 165, 165);
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+	background: rgb(107, 8, 255);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+}
+
+  .contact-form *::placeholder {
+	color: rgb(134, 134, 134);
+}
+
+.contact-form-error {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-size: 80%;
+	background-color: red;
+	color: #fff;
+	transition: all 800s ease;
+}
+
+.contact-form-error.is-active {
+	display: block;
+	animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none {
+	display: none;
+}
+
+@keyframes show-message {
+	0% {
+	visibility: hidden;
+	opacity: 0;
+}
+	100% {
+	visibility: visible;
+	opacity: 1;
+	}
+}
